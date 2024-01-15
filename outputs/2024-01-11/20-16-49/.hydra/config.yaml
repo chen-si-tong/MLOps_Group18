@@ -1,0 +1,9 @@
+models:
+  user_num: 6040
+  item_num: 3952
+  dim: 6
+  reg_strength: 0.1
+epoch:
+  learning_rate: 0.1
+  clipvalue: 2.0
+  num_epochs: 50

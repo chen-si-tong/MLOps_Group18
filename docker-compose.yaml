@@ -1,0 +1,12 @@
+version: "3"
+services:
+  trainer:
+    image: lfm_trainer:latest
+    build:
+      context: .
+      dockerfile: dockerfiles/train_model.dockerfile
+  predict:
+    image: lfm_test:latest
+    build:
+      context: .
+      dockerfile: dockerfiles/test_model.dockerfile

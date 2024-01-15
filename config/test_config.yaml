@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+
+user_num: 6040
+item_num: 3952
+dim: 6
+reg_strength: 0.1

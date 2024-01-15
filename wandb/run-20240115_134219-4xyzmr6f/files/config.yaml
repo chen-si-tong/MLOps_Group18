@@ -1,0 +1,55 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 0.1
+architecture:
+  desc: null
+  value: LFM
+dataset:
+  desc: null
+  value: m1-1m
+epochs:
+  desc: null
+  value: 500
+dim:
+  desc: null
+  value: 6
+reg_strength:
+  desc: null
+  value: 0.1
+clipvalue:
+  desc: null
+  value: 2
+batch_size:
+  desc: null
+  value: 2000
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.11
+    cli_version: 0.16.2
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1705322539.292597
+    t:
+      1:
+      - 2
+      - 3
+      - 50
+      - 55
+      2:
+      - 2
+      - 3
+      - 50
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.9.11
+      5: 0.16.2
+      8:
+      - 5
+      13: darwin-x86_64

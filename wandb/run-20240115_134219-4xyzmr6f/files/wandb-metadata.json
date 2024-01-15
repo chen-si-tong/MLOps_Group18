@@ -1,0 +1,45 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.11",
+    "heartbeatAt": "2024-01-15T12:42:19.891988",
+    "startedAt": "2024-01-15T12:42:19.273391",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/chensitong/MLOps/LFM/project/scripts/models_train.py",
+    "codePathLocal": "scripts/models_train.py",
+    "codePath": "LFM/project/scripts/models_train.py",
+    "git": {
+        "remote": "https://github.com/chen-si-tong/MLOps_stone",
+        "commit": null
+    },
+    "email": "stone.sitong.chen@outlook.com",
+    "root": "/Users/chensitong/MLOps",
+    "host": "ChendeMacBook-Pro.local",
+    "username": "chensitong",
+    "executable": "/Users/chensitong/MLOps/LFM/myenv/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2600,
+        "min": 2600,
+        "max": 2600
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2600,
+            "min": 2600,
+            "max": 2600
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 465.62699127197266,
+            "used": 9.754119873046875
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
