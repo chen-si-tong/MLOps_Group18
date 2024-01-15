@@ -6,7 +6,7 @@ steps:
       - 'build'
       - 'trainer'  
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/mlopslfm/trainer']  
+    args: ['push', 'trainer']  
 
   - name: 'docker/compose:1.29.2'
     args:
@@ -15,4 +15,4 @@ steps:
       - 'build'
       - 'predict' 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/mlopslfm/predict']  
+    args: ['push', 'predict']  
