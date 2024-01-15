@@ -4,15 +4,15 @@ steps:
       - '-f'
       - 'docker-compose.yaml'
       - 'build'
-      - 'trainer'  
+      - 'lfm_trainer'  
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/mlopslfm/trainer']  
+    args: ['push', 'gcr.io/mlopslfm/lfm_trainer']  
 
   - name: 'docker/compose:1.29.2'
     args:
       - '-f'
       - 'docker-compose.yaml'
       - 'build'
-      - 'predict' 
+      - 'lfm_test' 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/mlopslfm/predict']  
+    args: ['push', 'gcr.io/mlopslfm/lfm_test']  
