@@ -1,4 +1,7 @@
 [core]
-    remote = storage
+    remote = remote_storage
 ['remote "storage"']
     url = gdrive://1gY7C2duDQREdxoymRZ7Bkc7xh_vKiOE8
+['remote "remote_storage"']
+    url = gs://lfm_data_bucket/
+    version_aware = true
