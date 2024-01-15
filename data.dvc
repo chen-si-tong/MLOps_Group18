@@ -1,6 +1,46 @@
 outs:
-- md5: 6ac4d48647629efb41b067d0e165469d.dir
-  size: 44609266
-  nfiles: 6
-  hash: md5
+- hash: md5
   path: data
+  files:
+  - relpath: .DS_Store
+    md5: b4935a15f8d43210fc5204d008bd0e6a
+    size: 6148
+    cloud:
+      remote_storage:
+        etag: 08e5b688b5eedf83031001
+        version_id: '1705337814129509'
+  - relpath: make_dataset.py
+    md5: 5798af962f9ad328359df3c8c0cd7cb4
+    size: 2113
+    cloud:
+      remote_storage:
+        etag: 08fde0fdb4eedf83031001
+        version_id: '1705337813954685'
+  - relpath: processed/test.pickle
+    md5: b1b8ffc57592e9cb51bf094b41dcee01
+    size: 2001319
+    cloud:
+      remote_storage:
+        etag: 089fd6a1b5eedf83031001
+        version_id: '1705337814543135'
+  - relpath: processed/train.pickle
+    md5: fab311659aedfac3cf0e7f258fa5b4bd
+    size: 16004236
+    cloud:
+      remote_storage:
+        etag: 08dde792b6eedf83031001
+        version_id: '1705337816396765'
+  - relpath: processed/validation.pickle
+    md5: 0996f9d236ffb96ecaf990b9af7089ec
+    size: 2001319
+    cloud:
+      remote_storage:
+        etag: 08d3ea9eb5eedf83031001
+        version_id: '1705337814496595'
+  - relpath: raw/ratings.dat
+    md5: a89aa3591bc97d6d4e0c89459ff39362
+    size: 24594131
+    cloud:
+      remote_storage:
+        etag: 08b896b0b6eedf83031001
+        version_id: '1705337816877880'

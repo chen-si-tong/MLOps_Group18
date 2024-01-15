@@ -1,0 +1,18 @@
+steps:
+  - name: 'docker/compose:1.29.2'
+    args:
+      - '-f'
+      - 'docker-compose.yaml'
+      - 'build'
+      - 'trainer'  
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/mlopslfm/trainer']  
+
+  - name: 'docker/compose:1.29.2'
+    args:
+      - '-f'
+      - 'docker-compose.yaml'
+      - 'build'
+      - 'predict' 
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/mlopslfm/predict']  
