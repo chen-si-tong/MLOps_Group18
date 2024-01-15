@@ -1,18 +1,11 @@
 steps:
-  - name: 'docker/compose:1.29.2'
-    args:
-      - '-f'
-      - 'docker-compose.yaml'
-      - 'build'
-      - 'trainer'  
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'trainer']  
+    args: ['build', '-f', 'train_model.dockerfile', '-t', 'gcr.io/mlopslfm/lfm_trainer', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/mlopslfm/lfm_trainer']
 
-  - name: 'docker/compose:1.29.2'
-    args:
-      - '-f'
-      - 'docker-compose.yaml'
-      - 'build'
-      - 'predict' 
+
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'predict']  
+    args: ['build', '-f', 'test_model.dockerfile', '-t', 'gcr.io/mlopslfm/lfm_tester', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/mlopslfm/lfm_tester']

@@ -19,10 +19,10 @@ def _main(cfg: DictConfig,train_step=train_step,validation_step=validation_step)
     wandb.login(key="554e3e38d9d22aba8e2695fa7d451dc1f38f4b1e")
     wandb.init(
     # set the wandb project where this run will be logged
-    project="MLops_LFM", 
+    project="mlpos_group18", 
     entity="s230027", 
     group="LFM", 
-    name="mse", 
+    name="LFM training", 
     # track hyperparameters and run metadata
     config={
     "learning_rate": 0.1,
