@@ -6,11 +6,11 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirments_run.txt .
+COPY requirements.txt .
 # COPY mlopslfm-3cc1ffa05d44.json /root/.config/gcloud/
 
 # Install the Python dependencies
-RUN pip install --no-cache-dir -r requirments_run.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
 COPY cloud_run.py .
