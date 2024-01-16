@@ -54,7 +54,6 @@ logger = logging.getLogger()
 logger.handlers[0] = RichHandler(markup=True)  # set rich handler
 
 
-
 if __name__ == "__main__":
     # Sample messages (note that we use configured `logger` now)
     logger.debug("Used for debugging your code.")
