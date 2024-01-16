@@ -8,3 +8,4 @@ pandas
 google-cloud-storage
 Flask
 gcsfs
+evidently
