@@ -112,7 +112,7 @@ end of the project.
 >
 > Example:
 >
-> *sXXXXXX, sXXXXXX, sXXXXXX*
+> *s215161, s230027, s230029*
 >
 > Answer:
 
